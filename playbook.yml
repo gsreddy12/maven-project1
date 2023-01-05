@@ -4,4 +4,6 @@
   tasks: 
   - name: Installing Git Package
     yum: name=git state=absent
+  - name: Installing Httpd Package
+    yum: name=httpd state=latest
 #ansible all -m yum -b -a "name=git state=latest"

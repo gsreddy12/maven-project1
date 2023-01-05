@@ -1,9 +1,9 @@
 ---
-- hosts: all
+- hosts: batch86
   become: yes
   tasks:
   - name: creating file
-    file: touch /opt/7888 
+    file: mkdir /opt/786 
   - name: Installing Git Package
     yum: name=git
 #ansible all -m yum -b -a "name=git state=latest"

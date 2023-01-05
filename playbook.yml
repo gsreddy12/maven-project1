@@ -1,9 +1,7 @@
 ---
-- hosts: batch86
+- hosts: all
   become: yes
-  tasks:
-  - name: creating file
-    file: mkdir /opt/786 
+  tasks: 
   - name: Installing Git Package
-    yum: name=git
+    yum: name=git state=stopped
 #ansible all -m yum -b -a "name=git state=latest"

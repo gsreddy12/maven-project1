@@ -6,4 +6,6 @@
     yum: name=git state=absent
   - name: Installing Httpd Package
     yum: name=httpd state=latest
+  - name: Activating Httpd Services
+    service: name=httpd state=started
 #ansible all -m yum -b -a "name=git state=latest"
